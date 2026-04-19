@@ -23,6 +23,7 @@ body {
 .banner img {
   width: 90%;
   border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
 /* Grid */
@@ -43,10 +44,14 @@ button {
   color: white;
   backdrop-filter: blur(10px);
   transition: 0.3s;
+  cursor: pointer;
 }
 
-/* Hover effect */
 button:hover {
   transform: scale(1.05);
   background: rgba(255,255,255,0.2);
+}
+
+button:active {
+  transform: scale(0.95);
 }
