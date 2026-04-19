@@ -1,17 +1,16 @@
-function openApp(url) {
-  window.location.href = url;
+function openApp(url){
+window.location.href=url;
 }
 
-/* Banner Slider */
-const images = [
-  "https://via.placeholder.com/350x150/ff7f7f",
-  "https://via.placeholder.com/350x150/7fbfff",
-  "https://via.placeholder.com/350x150/7fff7f"
+let imgs=[
+"https://via.placeholder.com/300x150/ff0000",
+"https://via.placeholder.com/300x150/00ff00",
+"https://via.placeholder.com/300x150/0000ff"
 ];
 
-let index = 0;
+let i=0;
 
-setInterval(() => {
-  index = (index + 1) % images.length;
-  document.getElementById("slider").src = images[index];
-}, 2000);
+setInterval(()=>{
+i=(i+1)%imgs.length;
+document.getElementById("slider").src=imgs[i];
+},2000);
